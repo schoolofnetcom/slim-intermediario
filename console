@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$application = new Application;
+
+$application->add(new \SonSlim\Core\Commands\ServerCommand);
+$application->add(new \SonSlim\Migrations\Commands\InitCommand);
+$application->add(new \SonSlim\Migrations\Commands\MigrationCommand);
+$application->add(new \SonSlim\Migrations\Commands\SeedCommand);
+$application->add(new \SonSlim\Migrations\Commands\SeedCreateCommand);
+
+$application->run();

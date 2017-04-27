@@ -1,0 +1,17 @@
+{
+  "name": "son-slim/core",
+  "description": "A Slim Framework skeleton application for rapid development",
+  "keywords": ["microframework", "rest", "router", "psr7"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Lockhart",
+      "email": "info@joshlockhart.com",
+      "homepage": "http://www.joshlockhart.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  }
+
+}
